@@ -1,0 +1,108 @@
+:root {
+    --fg: #fff;
+    --bg: #000;
+    --bright-red: #ff0000;
+
+    --card-bg: #111;
+    --card-border: #333;
+    --muted: #ccc;
+    --primary: #1d4ed8;
+    --primary-hover: #1e40af;
+    --success: #22c55e;
+}
+
+body,
+html {
+    font-family: 'Inter', sans-serif;
+    width: 100vw;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    color: var(--fg);
+    background-color: var(--bg);
+}
+
+header>div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+header {
+    padding: 12px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+header>nav {
+    display: flex;
+    gap: 1.5rem;
+    flex-shrink: 1;
+}
+
+header>nav>a {
+    all: unset;
+    border-radius: 30px;
+    padding: .7rem;
+    border: 1px solid transparent;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: border .25s ease;
+}
+
+.menu-btn {
+    display: none;
+    font-size: 24px;
+    background: none;
+    color: var(--fg);
+    border: none;
+    cursor: pointer;
+}
+
+.on {
+    background-color: var(--bright-red);
+}
+
+header>nav>a:hover {
+    border: 1px solid var(--deep-burgundy);
+}
+
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 0.5rem;
+    }
+
+    header>nav {
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        flex-direction: column;
+        background: var(--bg);
+        border-radius: 20px;
+        padding: 12px;
+        border: 1px solid var(--fg);
+        z-index: 2;
+        display: none;
+    }
+
+    header>nav.open {
+        display: flex;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    header>div {
+        font-size: 0.8rem;
+    }
+
+}

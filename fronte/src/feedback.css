@@ -1,0 +1,48 @@
+.feedback-page {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 20px;
+    color: var(--fg);
+}
+
+.feedback-page label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.feedback-page select,
+.feedback-page textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    border: 1px solid #333;
+    background: #111;
+    color: var(--fg);
+}
+
+.feedback-form button {
+    padding: 8px 16px;
+    background: var(--primary, #1d4ed8);
+    color: var(--fg);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.feedback-card {
+    background: #111;
+    border: 1px solid #333;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+}
+
+.error {
+    background: rgba(255, 0, 0, 0.15);
+    color: var(--bright-red);
+    padding: 10px;
+    border-left: 4px solid var(--bright-red);
+    border-radius: 6px;
+    margin-bottom: 15px;
+}

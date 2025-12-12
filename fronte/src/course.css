@@ -1,0 +1,65 @@
+.courses-container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    font-family: sans-serif;
+    color: var(--fg);
+    background: var(--bg);
+}
+
+.no-user-box {
+    background: rgba(255, 0, 0, 0.1);
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    border-left: 4px solid var(--bright-red);
+    border-radius: 6px;
+    color: var(--bright-red);
+    font-weight: bold;
+}
+
+.course-card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    transition: 0.2s ease;
+}
+
+.course-card:hover {
+    background: #191919;
+    transform: scale(1.01);
+}
+
+.course-card h3 {
+    margin: 0 0 6px;
+    color: var(--fg);
+}
+
+.course-card p {
+    margin: 0 0 10px;
+    color: var(--muted);
+}
+
+.course-card button {
+    padding: 6px 12px;
+    background: var(--primary);
+    color: var(--fg);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.course-card button:hover {
+    background: var(--primary-hover);
+}
+
+.enrolled {
+    background: var(--success);
+    color: var(--fg);
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
