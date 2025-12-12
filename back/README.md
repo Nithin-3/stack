@@ -1,3 +1,15 @@
+## Features
+
+User authentication (signup/login) with JWT
+
+Courses management: create, list, delete, enroll users
+
+Feedback submission & retrieval
+
+User tasks (todos)
+
+SQLite database with foreign key constraints
+
 ### Routes
 ## User / Auth
 
